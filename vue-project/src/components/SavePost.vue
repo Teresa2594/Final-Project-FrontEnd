@@ -114,17 +114,22 @@ export default{
 
 .titleForm{
     color: aliceblue;
+    font-size:30px;
+    margin-top: -10px;
 }
 
 .labels{
     color: aliceblue;
+    font-size: 20px;
 }
 
 .inputs{
     margin-bottom:30px;
+    font-size: 15px;
 }
 
 .enviar{
+    margin-top:-15px;
     width: 50px;
 }
 

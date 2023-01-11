@@ -1,6 +1,6 @@
 <template>
 <body class="bodyLogin">
-    
+   
     <form class="formularioLogin" @submit.prevent="handleLoginSubmit">
       <label class="labelLogin">Email</label>
       <input class="inputlogin" type="email" name="email" v-model="email" />
@@ -13,7 +13,8 @@
  
     <p class="subtitlesOne">¿No tienes una cuenta todavía?</p>
     <RouterLink class="subtitlesTwo"  to="/signup">Crea una nueva cuenta</RouterLink>
-  
+    
+    <router-link to="/"><i class="fa-solid fa-house"></i></router-link>
 
 </body>
 
@@ -103,8 +104,7 @@ export default{
 } 
 
 .subtitlesTwo:hover{
-    box-shadow: 3px 4px 16px rgb(238, 242, 115);
-  transition: all 0.2s ease;
+    color: rgb(50, 134, 194);
 }
 
 .formularioLogin .inputlogin{
@@ -127,8 +127,6 @@ export default{
     box-shadow: 0 4px 16px rgb(85, 202, 64);
   transition: all 0.2s ease;
 }
-
-
 
 
 

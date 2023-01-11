@@ -1,11 +1,10 @@
 <template>
     <div class="popup">
         <div class="popup-inner">
-            <div class="butClose">
                 <i class="fa-sharp fa-solid fa-circle-xmark fa-2x"  @click="trigger()"></i>
-        
-        </div>
+        <div class="text-inside">
            <slot class="text-inside"></slot>  
+        </div>
         </div>
     </div>
 
@@ -31,7 +30,6 @@ props:['trigger']
     bottom:0;
     z-index:99;
     background-color: rgba(0,0,0,0.2);
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,14 +46,27 @@ props:['trigger']
 
 }
 
-.butClose{
+.popup-inner .fa-sharp{
     display: flex;
     justify-content: flex-end;
+
+    
+}
+
+.popup-inner p{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
 
 .fa-sharp{
     padding-top: 10px;
     color: rgba(219, 88, 88, 0.845);
  
+}
+
+ .fa-sharp:hover{
+    color:red;
+    cursor: pointer;
 }
 </style>

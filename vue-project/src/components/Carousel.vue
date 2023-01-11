@@ -1,8 +1,8 @@
 <template>
     <div class="carousel">
     <slot></slot>
-    <button @click="next" class="next"><i class="fa-solid fa-chevron-right"></i></button>
-    <button @click="prev" class="previous"><i class="fa-solid fa-chevron-left"></i></button>
+    <button @click="next" class="next"><i class="fa-solid fa-chevron-right fa-3x"></i></button>
+    <button @click="prev" class="previous"><i class="fa-solid fa-chevron-left fa-3x"></i></button>
 </div>
     
 </template>
@@ -36,11 +36,10 @@ export default{
 }
 
 
-.next:focus, .next:hover, .previous:focus, .previous:hover{
+.next:active, .next:hover, .previous:active, .previous:hover{
     outline:none;
     cursor:pointer;
-    background-color: darkgray;
-    opacity: 50%;
+    
     
 }
 

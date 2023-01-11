@@ -16,8 +16,8 @@
       <button class="buttonReg" type="submit">Registrarse</button>
     </form>
  
-    <p class="subtitles2">¿Tienes ya una cuenta?</p>
-    <RouterLink class="subtitles2" to="/login"> Iniciar Sesión</RouterLink>
+    <p class="subtitlesFrase">¿Tienes ya una cuenta?</p>
+    <RouterLink class="subtitlesEnlace" to="/login"> Iniciar Sesión</RouterLink>
   </body>
 
 
@@ -80,13 +80,23 @@ export default{
     margin-bottom: 30px;
 }
 
-.subtitles2{
+.subtitlesFrase{
     color: white;
     font-size:20px;   
     text-decoration: none; 
     margin-bottom:30px;  
     
 } 
+.subtitlesEnlace{
+    color: white;
+    font-size:20px;   
+    text-decoration: none; 
+    margin-bottom:30px;     
+}
+
+.subtitlesEnlace:hover{
+color: rgb(85, 202, 64);
+}
 
 .formularioSign .inputSign{
     width:500px;

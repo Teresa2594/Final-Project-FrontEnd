@@ -4,7 +4,7 @@
 
 <div class="card ">
     <div class="icon">
-        <img class="imagen-perfil" src="../assets/descarga.png"> 
+        
     </div>
     <div class="info__description">
         <h1 class="titleDescrip">{{user.name}}</h1>
@@ -50,6 +50,7 @@ export default{
     flex-wrap: wrap;
     justify-content: center;
     
+    
 }
 
 .container__card .card{
@@ -59,6 +60,7 @@ export default{
     font-family: 'Poppins', sans-serif;
     transition: all 300ms;
     border-radius: 20px;
+    
   
 }
 
@@ -76,10 +78,15 @@ export default{
     margin-top: -110px;
     border-radius: 20px 20px 0px 0px;
 }
-
+.card .icon{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/014/602/457/non_2x/woman-wearing-ski-goggles-smiling-winter-avatar-character-portrait-colorful-cartoon-illustration-modern-fashion-warm-clothing-snowfall-snow-icon-snowboard-free-vector.jpg');
+    background-repeat: none;
+    background-size: 200px 210px;
+}
 .icon{
+
     height: 220px;
-    background: white;
+    background: rgb(204, 204, 204);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,14 +98,14 @@ export default{
 
 .icon i{
     font-size: 150px;
-    color: #fff;
+    color: rgb(204, 204, 204);
     transition: all 400ms cubic-bezier(0.5,0,0,1);
 }
 
 .info__description{
     width: 100%;
     height: 220px;
-    background: #ffffff;
+    background:rgb(255, 255, 255);
     padding: 20px;
     margin-top: -220px;
     transition: all 400ms cubic-bezier(0.5,0,0,1);
@@ -107,6 +114,7 @@ export default{
 
 .info__description .titleDescrip{
     color: black;
+    
 }
 
 .info__description .textDescrip{
@@ -121,6 +129,8 @@ export default{
     -webkit-line-clamp: 5;
     line-clamp: 5;
     overflow: hidden;
+    margin-bottom: 20px;
+    
 }
 
 .info__description input{

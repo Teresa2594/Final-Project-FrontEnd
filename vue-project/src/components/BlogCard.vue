@@ -236,25 +236,31 @@ export default {
 .formulario2{
     display:flex;
     flex-direction: column;
-    justify-content: left;
+    
    
 }
 
-.titleForm{
+.formulario2 .titleForm{
     color: aliceblue;
+    font-size:30px;
+    margin-top: -10px;
 }
 
- .labels2{
+.formulario2 .labels2{
     color: aliceblue;
+  display: flex;
+  font-size: 20px;
     
 }
 
-.inputs2{
+.formulario2 .inputs2{
     margin-bottom:30px;
+    font-size: 15px;
 }
 
 .enviar{
     width: 50px;
+    margin-top:-15px;
 }
 
 

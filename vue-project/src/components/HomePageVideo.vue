@@ -29,12 +29,14 @@
 .container{
     margin-top: 30px;
     position: relative;
-    display: inline-block;
+    
     text-align: center;  
 }
-.container img{
+.container .imagen-fondo{
     width: 1500px;
     height: 700px;
+    opacity: 0.6;
+   margin-left: -25px;
 }
 
 .izquierda{
@@ -68,12 +70,6 @@
 .izquierda a:hover{
     background-color:  rgba(227, 227, 227, 0.986);
 }
-
-.imagen-fondo{
-    opacity: 0.6;
-}
-
-
 
 .centrado{
     position: absolute;

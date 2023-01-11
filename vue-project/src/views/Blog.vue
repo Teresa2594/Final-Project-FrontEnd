@@ -94,6 +94,7 @@ export default {
 
 .iconplus .fa-solid:hover {
     color: darkturquoise;
+    cursor: pointer;
     
 }
 
