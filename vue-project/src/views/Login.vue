@@ -11,8 +11,8 @@
       <button class="buttonInit" type="submit">Iniciar Sesión</button>
     </form>
  
-    <p class="subtitles">¿No tienes una cuenta todavía?</p>
-    <RouterLink class="subtitles"  to="/signup">Crea una nueva cuenta</RouterLink>
+    <p class="subtitlesOne">¿No tienes una cuenta todavía?</p>
+    <RouterLink class="subtitlesTwo"  to="/signup">Crea una nueva cuenta</RouterLink>
   
 
 </body>
@@ -87,13 +87,25 @@ export default{
      
 }
 
-.subtitles{
+.subtitlesOne{
+    color: white;
+    font-size:20px;   
+    text-decoration: none; 
+    margin-bottom:30px;  
+}
+
+.subtitlesTwo{
     color: white;
     font-size:20px;   
     text-decoration: none; 
     margin-bottom:30px;  
     
 } 
+
+.subtitlesTwo:hover{
+    box-shadow: 3px 4px 16px rgb(238, 242, 115);
+  transition: all 0.2s ease;
+}
 
 .formularioLogin .inputlogin{
     width:500px;

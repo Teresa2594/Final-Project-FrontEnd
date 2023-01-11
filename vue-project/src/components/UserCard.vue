@@ -9,10 +9,7 @@
     <div class="info__description">
         <h1 class="titleDescrip">{{user.name}}</h1>
         <p class="textDescrip">{{user.email}}</p>
-        <div v-for="post in user.posts" :key="post.title" class="posts">
-            {{post.title}}
-        </div>
-
+        <div v-for="post in user.posts" :key="post.title" class="posts"> {{post.title}} </div>
     </div>
 </div>
 
