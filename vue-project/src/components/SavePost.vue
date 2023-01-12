@@ -3,7 +3,7 @@
 <h1 class="titleForm">Agrega un nuevo post</h1>
 
 <form @submit="sendForm" class="formulario">
-    <label class="labels">Id del post</label>
+    <label class="labels">Identificador del post</label>
     <input class="inputs" id="id" type="number" v-model="post.id" :max="getLength()+1" :min="getLength()+1">
 
     <label class="labels">Título</label>
@@ -21,7 +21,7 @@
     <option>Montaña</option>
     </select>
 
-    <label class="labels">ID del usuario</label>
+    <label class="labels">Identificador del usuario</label>
     
     <select class="inputs" type="number" v-model="post.userId" required> 
    
@@ -32,7 +32,7 @@
     <label class="labels">Descripción</label>
     <textarea class="inputs" type="text" v-model="post.description" rows="10" cols="5" ></textarea>
 
-    <label class="labels">Url de la imágen</label>
+    <label class="labels">Dirección web de la imágen</label>
     <input class="inputs" id="urlImagen" type="url" v-model="post.urlImagen">
     
     <input type="submit" value="Enviar" class="enviar" >

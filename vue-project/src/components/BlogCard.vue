@@ -29,7 +29,7 @@
                                         
                                         <form @submit="sendForm" class="formulario2">
                                             
-                                            <label class="labels2">Id del post</label>
+                                            <label class="labels2">Identificador del post</label>
                                             <input class="inputs2"  type="number" v-model="post.id" readonly >
 
                                             <label class="labels2">Título</label>
@@ -41,13 +41,13 @@
                                             <label class="labels2">Sección</label>
                                             <input class="inputs2" type="text" v-model="post.section" required>
 
-                                            <label class="labels2">ID del usuario</label>
+                                            <label class="labels2">Identificador del usuario</label>
                                             <input class="inputs2" type="text" v-model="post.userId" required>
 
                                             <label class="labels2">Descripción</label>
                                             <textarea class="inputs2" type="text" v-model="post.description" rows="10" cols="5"></textarea>
 
-                                            <label class="labels2">Url de la imágen</label>
+                                            <label class="labels2">Dirección web de la imágen</label>
                                             <input class="inputs2" type="text" v-model="post.urlImagen" >
 
                                             <input type="submit" value="Enviar" class="enviar">

@@ -71,7 +71,6 @@ export default {
     async created() {
             const response = await fetch(`http://localhost:8083/api/posts`);
             this.posts = await response.json();   
-
     },
  
 };
