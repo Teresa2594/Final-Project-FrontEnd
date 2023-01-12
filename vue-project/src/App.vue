@@ -1,35 +1,28 @@
 <template>
   <div id="app">
-     <RouterView></RouterView>
+    <RouterView></RouterView>
   </div>
 </template>
 
 <script>
-import { RouterView } from 'vue-router';
-import authJS from './stores/auth.js';
-import {mapActions} from 'pinia';
+import { RouterView } from "vue-router";
+import authJS from "./stores/auth.js";
+import { mapActions } from "pinia";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    
-    RouterView
-},
+    RouterView,
+  },
 
-created() {
-      this.authenticateUser()
-    },
+  created() {
+    this.authenticateUser();
+  },
 
-methods:{
-  ...mapActions(authJS,['authenticateUser'])
-
-  
-}
-}
+  methods: {
+    ...mapActions(authJS, ["authenticateUser"]),
+  },
+};
 </script>
 
-<style>
-
-
-
-</style>
+<style></style>
